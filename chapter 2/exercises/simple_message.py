@@ -1,0 +1,2 @@
+message = "Keikantseng!"
+print(message)
