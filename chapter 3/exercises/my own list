@@ -1,0 +1,7 @@
+vehicles = ["Audi", "BMW", "Porsche", "Ferrari", "Lamborghini"]
+
+print(f"I would like to own a {vehicles[0]} RS3.")
+print(f"I would like to own a {vehicles[1]} M3.")
+print(f"I would like to own a {vehicles[2]} 911.")
+print(f"I would like to own a {vehicles[3]} F40.")
+print(f"I would like to own a {vehicles[4]} Huracán.")
