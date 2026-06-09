@@ -1,0 +1,46 @@
+# A list of places i want to visit not in alphabetical order
+
+place = ["dubai", "new zealand", "egypt", "china", "mauritius", "brazil"]
+
+# print the list in its original order
+
+print("Original order:")
+print(place)
+
+# print in alphabetical order using sorted()
+
+print("\nalphabetical order (sorted):")
+print(sorted(place))
+
+# show the list is still in original order
+
+print("\nOriginal order (unchanged):")
+print(place)
+
+# print in reverse alphabetical order using sorted() (original list unchanged)
+print("\nReverse alphabetical order (sorted):")
+print(sorted(place, reverse=True))
+
+# show the list is still in its original order
+print("\nOriginal order (unchanged):")
+print(place)
+
+# use reverse() to change the order of the list
+place.reverse()
+print("\nafter reverse():")
+print(place)
+
+# use reverse() again to restore the original order
+place.reverse()
+print("\nafter second reverse() (back to original):")
+print(place)
+
+# use sort() to store the list in alphabetical order
+place.sort()
+print("\nafter sort() - alphabetical order:")
+print(place)
+
+# use sort() to store the list in reverse alphabetical order
+place.sort(reverse=True)
+print("\nafter sort(reverse=True) - reverse alphabetical order:")
+print(place)
