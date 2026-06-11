@@ -1,0 +1,5 @@
+menu = ('pizza', 'burger', 'pasta', 'salad', 'soup')
+
+print("menu:")
+for food in menu:
+    print(food)

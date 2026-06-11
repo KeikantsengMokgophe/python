@@ -1,0 +1,252 @@
+# car = 'subaru'
+# name = 'Alice'
+# age = 25
+# fruits = ['apple', 'banana', 'cherry']
+# score = 87
+# temperature = 72
+
+# #  String Tests 
+# print("=" * 45)
+# print("STRING TESTS")
+# print("=" * 45)
+
+# print("\nIs car == 'subaru'? I predict True.")
+# print(car == 'subaru')
+
+# print("\nIs car == 'toyota'? I predict False.")
+# print(car == 'toyota')
+
+# print("\nIs name.lower() == 'alice'? I predict True.")
+# print(name.lower() == 'alice')
+
+# print("\nIs name == 'alice'? I predict False. (case sensitive)")
+# print(name == 'alice')
+
+# # Number Tests
+# print("\n" + "=" * 45)
+# print("NUMBER TESTS")
+# print("=" * 45)
+
+# print("\nIs age == 25? I predict True.")
+# print(age == 25)
+
+# print("\nIs age >= 18? I predict True.")
+# print(age >= 18)
+
+# print("\nIs score > 90? I predict False.")
+# print(score > 90)
+
+# print("\nIs temperature != 100? I predict True.")
+# print(temperature != 100)
+
+# print("\nIs age == 30? I predict False.")
+# print(age == 30)
+
+# # List Tests 
+# print("\n" + "=" * 45)
+# print("LIST TESTS")
+# print("=" * 45)
+
+# print("\nIs 'banana' in fruits? I predict True.")
+# print('banana' in fruits)
+
+# print("\nIs 'mango' in fruits? I predict False.")
+# print('mango' in fruits)
+
+# # Compound and/or Tests 
+# print("\n" + "=" * 45)
+# print("COMPOUND TESTS")
+# print("=" * 45)
+
+# print("\nIs age > 18 and score > 80? I predict True.")
+# print(age > 18 and score > 80)
+
+# print("\nIs age < 20 or score > 80? I predict True.")
+# print(age < 20 or score > 80)
+
+# print("\nIs age > 30 and score > 80? I predict False.")
+# print(age > 30 and score > 80)
+
+
+# MORE CONDITIONAL TESTS
+
+car = 'subaru'
+name = 'Alice'
+language = 'Python'
+city = 'Cape Town'
+age = 25
+score = 87
+temperature = 72
+height = 180
+fruits = ['apple', 'banana', 'cherry']
+languages = ['Python', 'JavaScript', 'Rust', 'Go']
+
+
+# STRING EQUALITY AND INEQUALITY
+
+print("=" * 55)
+print("1. STRING EQUALITY AND INEQUALITY")
+print("=" * 55)
+
+print("\nIs car == 'subaru'? I predict True.")
+print(car == 'subaru')
+
+print("\nIs car == 'toyota'? I predict False.")
+print(car == 'toyota')
+
+print("\nIs language == 'Python'? I predict True.")
+print(language == 'Python')
+
+print("\nIs language != 'Java'? I predict True.")
+print(language != 'Java')
+
+print("\nIs city == 'Johannesburg'? I predict False.")
+print(city == 'Johannesburg')
+
+print("\nIs car != 'subaru'? I predict False.")
+print(car != 'subaru')
+
+
+# TESTS USING lower()
+
+print("2. TESTS USING lower()")
+print("=" * 55)
+
+print("\nIs name.lower() == 'alice'? I predict True.")
+print(name.lower() == 'alice')
+
+print("\nIs language.lower() == 'python'? I predict True.")
+print(language.lower() == 'python')
+
+print("\nIs city.lower() == 'cape town'? I predict True.")
+print(city.lower() == 'cape town')
+
+print("\nIs name == 'alice'? I predict False. (no lower(), case-sensitive)")
+print(name == 'alice')
+
+print("\nIs language.lower() == 'javascript'? I predict False.")
+print(language.lower() == 'javascript')
+
+print("\nIs city.lower() == 'durban'? I predict False.")
+print(city.lower() == 'durban')
+
+
+# NUMERICAL TESTS
+
+print("\n" + "=" * 55)
+print("3. NUMERICAL TESTS")
+print("=" * 55)
+
+# Equality / inequality
+print("\nIs age == 25? I predict True.")
+print(age == 25)
+
+print("\nIs score != 100? I predict True.")
+print(score != 100)
+
+print("\nIs age == 30? I predict False.")
+print(age == 30)
+
+print("\nIs temperature != 72? I predict False.")
+print(temperature != 72)
+
+# Greater than / less than
+print("\nIs score > 80? I predict True.")
+print(score > 80)
+
+print("\nIs age < 18? I predict False.")
+print(age < 18)
+
+print("\nIs temperature < 100? I predict True.")
+print(temperature < 100)
+
+print("\nIs height > 200? I predict False.")
+print(height > 200)
+
+# Greater than or equal to / less than or equal to
+print("\nIs age >= 25? I predict True.")
+print(age >= 25)
+
+print("\nIs score <= 87? I predict True.")
+print(score <= 87)
+
+print("\nIs height >= 200? I predict False.")
+print(height >= 200)
+
+print("\nIs temperature <= 50? I predict False.")
+print(temperature <= 50)
+
+
+# TESTS USING and / or
+
+print("\n" + "=" * 55)
+print("4. TESTS USING 'and' / 'or'")
+print("=" * 55)
+
+print("\nIs age > 18 and score > 80? I predict True.")
+print(age > 18 and score > 80)
+
+print("\nIs age < 30 and language == 'Python'? I predict True.")
+print(age < 30 and language == 'Python')
+
+print("\nIs age > 30 and score > 80? I predict False. (age > 30 is False)")
+print(age > 30 and score > 80)
+
+print("\nIs height > 200 and score > 90? I predict False. (both are False)")
+print(height > 200 and score > 90)
+
+print("\nIs age < 20 or score > 80? I predict True. (score > 80 is True)")
+print(age < 20 or score > 80)
+
+print("\nIs language == 'Java' or city == 'Cape Town'? I predict True.")
+print(language == 'Java' or city == 'Cape Town')
+
+print("\nIs age > 30 or score > 95? I predict False. (both are False)")
+print(age > 30 or score > 95)
+
+print("\nIs height > 200 or temperature > 100? I predict False. (both are False)")
+print(height > 200 or temperature > 100)
+
+
+# TEST WHETHER AN ITEM IS IN A LIST
+
+print("\n" + "=" * 55)
+print("5. TESTS USING 'in' (item IS in list)")
+print("=" * 55)
+
+print("\nIs 'banana' in fruits? I predict True.")
+print('banana' in fruits)
+
+print("\nIs 'apple' in fruits? I predict True.")
+print('apple' in fruits)
+
+print("\nIs 'Python' in languages? I predict True.")
+print('Python' in languages)
+
+print("\nIs 'mango' in fruits? I predict False.")
+print('mango' in fruits)
+
+print("\nIs 'C++' in languages? I predict False.")
+print('C++' in languages)
+
+
+# TEST WHETHER AN ITEM IS NOT IN A LIST
+
+print("\n" + "=" * 55)
+print("6. TESTS USING 'not in' (item is NOT in list)")
+print("=" * 55)
+
+print("\nIs 'mango' not in fruits? I predict True.")
+print('mango' not in fruits)
+
+print("\nIs 'C++' not in languages? I predict True.")
+print('C++' not in languages)
+
+print("\nIs 'Ruby' not in languages? I predict True.")
+print('Ruby' not in languages)
+
+print("\nIs 'cherry' not in fruits? I predict False.")
+print('cherry' not in fruits)
+
+print("\nIs 'Go' not in languages? I predict False.")
+print('Go' not in languages)
