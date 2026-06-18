@@ -1,0 +1,26 @@
+
+# person = {
+#     'first_name': 'Keikantseng',
+#     'last_name': 'mokgophe',
+#     'age': 19,
+#     'city': 'Pretoria'
+# }
+ 
+# print("First Name:", person['first_name'])
+# print("Last Name:", person['last_name'] if person['last_name'] else "Not provided")
+# print("Age:", person['age'])
+# print("City:", person['city'])
+
+ #favourite numbers
+favorite_numbers = {
+    'Keikantseng': 7,
+    'jaden': 13,
+    'mary': 42,
+    'jacob': 21,
+    'jack': 99
+}
+ 
+print("--- Everyone's Favorite Numbers ---")
+for name, number in favorite_numbers.items():
+    print(f"{name}'s favorite number is {number}.")
+ 

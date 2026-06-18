@@ -1,0 +1,71 @@
+# alien_color = ["green", "yellow", "red"]
+
+# if  "green" in alien_color:
+#     print("player just earned 5 points")
+
+
+#ALIEN COLORS 2
+
+# alien_color = 'green'
+
+# if alien_color == 'green':
+#     print("You shot a green alien! player earned 5 points.")
+# else:
+#     print("You shot an alien! player earned 10 points.")
+
+
+# alien_color = 'red'
+
+# if alien_color == 'green':
+#     print("You shot a green alien! player earned 5 points.")
+# else:
+#     print("You shot an alien! player earned 10 points.")
+
+
+#alien colors 3
+
+# alien_color = 'green'
+
+# if alien_color == 'green':
+#     print("You shot a green alien! player earned 5 points.")
+# elif alien_color == 'yellow':
+#     print("You shot a yellow alien! player earned 10 points.")
+# elif alien_color == 'red':
+#     print("You shot a red alien! player earned 15 points.")
+
+
+# alien_color = 'yellow'
+
+# if alien_color == 'green':
+#     print("You shot a green alien! player earned 5 points.")
+# elif alien_color == 'yellow':
+#     print("You shot a yellow alien! player earned 10 points.")
+# elif alien_color == 'red':
+#     print("You shot a red alien! player earned 15 points.")
+
+
+# alien_color = 'red'
+
+# if alien_color == 'green':
+#     print("You shot a green alien! player earned 5 points.")
+# elif alien_color == 'yellow':
+#     print("You shot a yellow alien! player earned 10 points.")
+# elif alien_color == 'red':
+#     print("You shot a red alien! player earned 15 points.")
+
+# stages of life
+
+age = 17
+
+if age < 24:
+    print("This person is a baby.")
+elif age < 4:
+    print("This person is a toddler.")
+elif age < 13:
+    print("This person is a kid.")
+elif age < 20:
+    print("This person is a teenager.")
+elif age < 65:
+    print("This person is an adult.")
+else:
+    print("This person is an elder.")
