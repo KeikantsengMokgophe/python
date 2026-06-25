@@ -1,3 +1,9 @@
+# The code defines a list called animals containing three strings — dog, cat, and rabbit.
+# A for loop then iterates over each item, using an f-string to print a personalised sentence for each animal.
+#    After the loop finishes, a final print statement outputs a concluding message
+# with \n adding a blank line before it for spacing.
+
+
 animals = ['dog', 'cat', 'rabbit']
 
 for animal in animals:

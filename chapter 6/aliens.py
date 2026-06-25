@@ -22,7 +22,6 @@ for alien in aliens[:3]:
     alien['points'] = 10
 
 
-
 #SHOW THE FIRST 5 ALIENS
 for alien in aliens[:5]:
     print(alien)
@@ -30,4 +29,5 @@ print("...")
 
 #SHOW HOW MANY ALIENS HAVE BEEN CREATED
 print(f"total number of aliens: {len(aliens)}")
+
 

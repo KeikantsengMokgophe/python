@@ -23,4 +23,9 @@ favorite_numbers = {
 print("--- Everyone's Favorite Numbers ---")
 for name, number in favorite_numbers.items():
     print(f"{name}'s favorite number is {number}.")
+
+
+#6.7 people
+
+
  
