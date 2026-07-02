@@ -1,0 +1,186 @@
+# def display_message():
+#     return """i learned how to write functions and to pass arguments and how to use fucntions with lists,dictionaries,if statements and while loops"""
+
+# function = display_message()
+# print(function)   
+
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+# exercise 8.2
+# def favorite_book(title):
+#     return f"One of my favorite books is alice in wonderland {title.title()}."
+
+# print(favorite_book("alice in wonderland"))
+
+# ////////////////////////////////////////////////////////////////////////////////////////////
+
+# exercise 8.3
+# def make_shirt(size, message):
+#     return f"The size of the shirt is {size} and the message on the shirt is '{message}'."
+
+# print(make_shirt("medium", "I love coding"))
+
+# ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+# exercise 8.4
+
+# def make_shirt(size='large', message='I love Python'):
+#     """Display information about the shirt to be made."""
+#     print(f"\nSize: {size}")
+#     print(f"Message: {message}")
+
+# # A large shirt with the default message
+# make_shirt()
+
+# # A medium shirt with the default message
+# make_shirt(size='medium')
+
+# # A shirt of any size with a different message
+# make_shirt(size='small', message='I love coding!')
+
+# ///////////////////////////////////////////////////////////////////////////
+
+# exercise 8.5
+
+# def describe_city(city, country='Iceland'):
+#     """Print a sentence describing the city and its country."""
+#     print(f"{city} is in {country}.")
+
+# # Call the function for three different cities
+# describe_city('Reykjavik')
+# describe_city('Akureyri')
+# describe_city('Paris', 'France')
+
+# ///////////////////////////////////////////////////////////////////////////////////
+
+# exercise 8.6
+
+# def city_country(city, country):
+#     """Return a string of the form 'City, Country'."""
+#     return f"{city}, {country}"
+
+# # Call the function with three city-country pairs and print the results
+# print(city_country('Santiago', 'Chile'))
+# print(city_country('Reykjavik', 'Iceland'))
+# print(city_country('Paris', 'France'))
+
+# ///////////////////////////////////////////////////////////////////////////////////////
+
+# exercise 8.7
+
+# def make_album(artist, title):
+#     """Build and return a dictionary describing a music album."""
+#     album = {'artist': artist, 'title': title}
+#     return album
+
+# # three dictionaries representing different albums
+# album1 = make_album('Pink Floyd', 'The Dark Side of the Moon')
+# album2 = make_album('Fleetwood Mac', 'Rumours')
+# album3 = make_album('Daft Punk', 'Discovery')
+
+# print(album1)
+# print(album2)
+# print(album3)
+
+# ///////////////////////////////////////////////////////////////////////////////////////////////
+
+# exercise 8.8
+
+# def make_album(artist, title, songs=None):
+#     """Build and return a dictionary describing a music album."""
+#     album = {'artist': artist, 'title': title}
+#     if songs:
+#         album['songs'] = songs
+#     return album
+
+# while True:
+#     print("\nEnter 'quit' at any time to exit.")
+    
+#     artist = input("What's the artist's name? ")
+#     if artist == 'quit':
+#         break
+    
+#     title = input("What's the album title? ")
+#     if title == 'quit':
+#         break
+    
+#     album = make_album(artist, title)
+#     print(f"\n{album}")
+
+# /////////////////////////////////////////////////////////////////////////////////////////
+
+# exercise 8.9
+
+# def show_messages(messages):
+#     """Print each text message in the list."""
+#     for message in messages:
+#         print(message)
+
+# # A list of short text messages
+# text_messages = [
+#     "Hey, are we still on for lunch?",
+#     "Running 10 minutes late!",
+#     "Don't forget to bring the charger.",
+#     "Great meeting today, thanks!",
+# ]
+
+# show_messages(text_messages)
+
+# ///////////////////////////////////////////////////////////////
+
+# exercise 8.10
+
+def send_messages(messages, sent_messages):
+    """Print each text message and move it to sent_messages."""
+    while messages:
+        current_message = messages.pop()
+        print(current_message)
+        sent_messages.append(current_message)
+
+# A list of short text messages
+# text_messages = [
+#     "Hey, are we still on for lunch?",
+#     "Running 10 minutes late!",
+#     "Don't forget to bring the charger.",
+#     "Great meeting today, thanks!",
+# ]
+
+# sent_messages = []
+
+# send_messages(text_messages, sent_messages)
+
+# print("\nOriginal list:")
+# print(text_messages)
+
+# print("\nSent messages:")
+# print(sent_messages)
+
+# ///////////////////////////////////////////////////////////////////
+
+# exercise 8.11
+
+def send_messages(messages, sent_messages):
+    """Print each text message and move it to sent_messages."""
+    while messages:
+        current_message = messages.pop()
+        print(current_message)
+        sent_messages.append(current_message)
+
+# A list of short text messages
+text_messages = [
+    "Hey, are we still on for lunch?",
+    "Running 10 minutes late!",
+    "Don't forget to bring the charger.",
+    "Great meeting today, thanks!",
+]
+
+sent_messages = []
+
+# a copy of the list, not the original
+send_messages(text_messages[:], sent_messages)
+
+print("\nOriginal list:")
+print(text_messages)
+
+print("\nSent messages:")
+print(sent_messages)
