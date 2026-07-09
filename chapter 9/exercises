@@ -1,0 +1,188 @@
+# 9.1
+
+# class Restaurant:
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+
+#     def describe_restaurant(self):
+#         print(f"{self.restaurant_name} serves {self.cuisine_type} cuisine.")
+
+#     def open_restaurant(self):
+#         print(f"{self.restaurant_name} is now open!")
+
+
+# restaurant = Restaurant("The Golden Spoon", "Italian")
+
+# print(restaurant.restaurant_name)
+# print(restaurant.cuisine_type)
+
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()
+
+# 9.2
+
+# class Restaurant:
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+
+#     def describe_restaurant(self):
+#         print(f"{self.restaurant_name} serves {self.cuisine_type} cuisine.")
+
+#     def open_restaurant(self):
+#         print(f"{self.restaurant_name} is now open!")
+
+
+# restaurant = Restaurant("The Golden Spoon", "Italian")
+
+# print(restaurant.restaurant_name)
+# print(restaurant.cuisine_type)
+
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()
+
+9.3
+
+# class User:
+#     def __init__(self, first_name, last_name, age, email, city):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.age = age
+#         self.email = email
+#         self.city = city
+
+#     def describe_user(self):
+#         print(f"\nUser Profile:")
+#         print(f"Name: {self.first_name} {self.last_name}")
+#         print(f"Age: {self.age}")
+#         print(f"Email: {self.email}")
+#         print(f"City: {self.city}")
+
+#     def greet_user(self):
+#         print(f"Hello, {self.first_name}! Welcome back.")
+
+
+# user1 = User("Emma", "Watson", 34, "emma.watson@email.com", "London")
+# user2 = User("Kofi", "Mensah", 28, "kofi.mensah@email.com", "Accra")
+# user3 = User("Lena", "Nilsson", 41, "lena.nilsson@email.com", "Stockholm")
+
+# for user in (user1, user2, user3):
+#     user.describe_user()
+#     user.greet_user()
+
+# 9.4
+
+# class Restaurant:
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+#         self.number_served = 0
+
+#     def describe_restaurant(self):
+#         print(f"{self.restaurant_name} serves {self.cuisine_type} cuisine.")
+
+#     def open_restaurant(self):
+#         print(f"{self.restaurant_name} is now open!")
+
+
+# restaurant = Restaurant("The Golden Spoon", "Italian")
+
+# print(f"Number served: {restaurant.number_served}")
+
+# restaurant.number_served = 150
+# print(f"Number served: {restaurant.number_served}")
+
+# 9.6
+
+# class Restaurant:
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+#         self.number_served = 0
+
+#     def describe_restaurant(self):
+#         print(f"{self.restaurant_name} serves {self.cuisine_type} cuisine.")
+
+#     def open_restaurant(self):
+#         print(f"{self.restaurant_name} is now open!")
+
+
+# class IceCreamStand(Restaurant):
+#     def __init__(self, restaurant_name, flavors):
+#         super().__init__(restaurant_name, "ice cream")
+#         self.flavors = flavors
+
+#     def show_flavors(self):
+#         print(f"\n{self.restaurant_name} offers these flavors:")
+#         for flavor in self.flavors:
+#             print(f"- {flavor}")
+
+
+# flavors = ["Vanilla", "Chocolate", "Strawberry", "Mint Chip", "Rocky Road"]
+# ice_cream_stand = IceCreamStand("Frosty's", flavors)
+
+# ice_cream_stand.describe_restaurant()
+# ice_cream_stand.show_flavors()
+
+# 9.9
+
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
+
+#     def get_descriptive_name(self):
+#         long_name = f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+
+#     def update_odometer(self, mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading = mileage
+#         else:
+#             print("You can't roll back an odometer!")
+
+#     def increment_odometer(self, miles):
+#         self.odometer_reading += miles
+
+
+# class Battery:
+#     def __init__(self, battery_size=75):
+#         self.battery_size = battery_size
+
+#     def describe_battery(self):
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+
+#     def get_range(self):
+#         if self.battery_size == 75:
+#             range = 260
+#         elif self.battery_size == 100:
+#             range = 315
+
+#     print(f"This car can go about {range} miles on a full charge.")
+
+#     def upgrade_battery(self):
+#         if self.battery_size != 65:
+#             self.battery_size = 65
+
+
+# class ElectricCar(Car):
+#     def __init__(self, make, model, year):
+#         super().__init__(make, model, year)
+#         self.battery = Battery()
+
+
+# my_tesla = ElectricCar("tesla", "model s", 2024)
+
+# print(my_tesla.get_descriptive_name())
+
+# my_tesla.battery.get_range()
+
+# my_tesla.battery.upgrade_battery()
+# my_tesla.battery.get_range()
+
