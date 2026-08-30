@@ -1,0 +1,26 @@
+<!-- 10.1
+
+In Python you can define classes to model real-world things like restaurants or cars.
+In Python you can use inheritance to let one class build on another without repeating code.
+In Python you can store related classes in separate modules and import them where needed.
+In Python you can read and write files to save and load information between program runs.
+In Python you can loop over data structures like lists and dictionaries to process each item.
+
+# First method: read the entire file at once
+with open('learning_python.txt') as file_object:
+    contents = file_object.read()
+print(contents.rstrip())
+
+print("\n---\n")
+
+# Second method: store lines in a list, then loop over each line
+with open('learning_python.txt') as file_object:
+    lines = file_object.readlines()
+
+for line in lines:
+    print(line.rstrip()) -->
+
+name = input("What's your name? ")
+
+with open('guest.txt', 'w') as file_object:
+    file_object.write(name)
